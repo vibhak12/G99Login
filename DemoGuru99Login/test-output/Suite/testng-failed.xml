@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="uname" value="mngr576941"/>
+  <parameter name="pass" value="bAmEgEr"/>
+  <test thread-count="5" name="Test1(failed)">
+    <classes>
+      <class name="testCases.TestCaseLogin">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+          <include name="TestValidLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testCases.TestCaseLogin -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" name="Test2(failed)">
+    <classes>
+      <class name="testCases.TestCaseLogin">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+          <include name="TestValidLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testCases.TestCaseLogin -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
