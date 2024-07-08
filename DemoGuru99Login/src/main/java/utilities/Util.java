@@ -6,10 +6,8 @@ import java.io.IOException;
 
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
-import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
 
 
 public class Util {
@@ -35,7 +33,7 @@ public class Util {
 		
 		tableArray=new String[totalRows][totalCols];
 		
-		int ci=0,cj=0;
+	
 		//storing all data into an array
 		for(int i=1;i<totalRows+1;i++){
 			for(int j=0;j<totalCols;j++){
@@ -48,7 +46,7 @@ public class Util {
 		}
 		
 
-//workbook.close();
+workbook.close();
 		
 return (tableArray);
 
@@ -75,7 +73,7 @@ public static void main(String[] args) throws Exception, IOException {
 			tableArray=new String[totalRows][totalCols];
 			//[5][2]
 			System.out.println("length of array is"+tableArray.length);
-			int ci=0,cj=0;
+			
 			//storing all data into an array
 			for(int i=1;i<totalRows+1;i++){
 				for(int j=0;j<totalCols;j++){
